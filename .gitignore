@@ -8,7 +8,8 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -203,3 +204,4 @@ pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/osx,python
 
+Learning_analytics_project/data/raw
