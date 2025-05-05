@@ -1,4 +1,4 @@
-# Tarea: Analítica de Aprendizaje
+# Analítica de Aprendizaje
 
 ## Información General
 - **Curso**: Fundamentos de Ciencia de Datos
