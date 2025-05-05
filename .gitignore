@@ -204,4 +204,5 @@ pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/osx,python
 
+# Local LARGE files
 Learning_analytics_project/data/raw
