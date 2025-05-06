@@ -1,0 +1,78 @@
+// Open University Learning Analytics Dataset
+// Modelo de datos en formato DBML
+// https://dbdiagram.io/d/Learning_analytics_project-681a2d545b2fc4582f7491a6
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table assessments_df {
+  code_module varchar
+  code_presentation varchar
+  id_assessment integer [primary key]
+  assessment_type varchar
+  date varchar
+  weight float
+}
+
+Table courses_df {
+  code_module varchar [primary key]
+  code_presentation varchar [primary key]
+  module_presentation_length integer
+}
+
+Table student_assessment_df {
+  id_assessment integer
+  id_student integer
+  date_submitted integer
+  is_banked integer
+  score varchar
+}
+
+Table student_info_df {
+  code_module varchar
+  code_presentation varchar
+  id_student integer [primary key]
+  gender varchar
+  region varchar
+  highest_education varchar
+  imd_band varchar
+  age_band varchar
+  num_of_prev_attempts integer
+  studied_credits integer
+  disability varchar
+  final_result varchar
+}
+
+Table student_registration_df {
+  code_module varchar
+  code_presentation varchar
+  id_student integer
+  date_registration varchar
+  date_unregistration varchar
+}
+
+Table student_vle_df {
+  code_module varchar
+  code_presentation varchar
+  id_student integer
+  id_site integer
+  date integer
+  sum_click integer
+}
+
+Table vle_df {
+  id_site integer [primary key]
+  code_module varchar
+  code_presentation varchar
+  activity_type varchar
+  week_from varchar
+  week_to varchar
+}
+
+// Relaciones entre tablas
+Ref: assessments_df.(code_module, code_presentation) > courses_df.(code_module, code_presentation)
+Ref: student_assessment_df.id_assessment > assessments_df.id_assessment
+Ref: student_assessment_df.id_student > student_info_df.id_student
+Ref: student_registration_df.(code_module, code_presentation, id_student) > student_info_df.(code_module, code_presentation, id_student)
+Ref: student_vle_df.id_site > vle_df.id_site
+Ref: student_vle_df.id_student > student_info_df.id_student
+Ref: student_vle_df.(code_module, code_presentation) > courses_df.(code_module, code_presentation)
+Ref: vle_df.(code_module, code_presentation) > courses_df.(code_module, code_presentation)
