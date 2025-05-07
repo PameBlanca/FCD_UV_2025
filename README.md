@@ -21,7 +21,7 @@ Este repositorio contiene los proyectos y tareas desarrollados durante el curso 
 - Jupyter/Colab
 - Pandas, NumPy
 - Matplotlib, Seaborn
-- Scikit-learn
+
 
 ### Colaboradores
 
