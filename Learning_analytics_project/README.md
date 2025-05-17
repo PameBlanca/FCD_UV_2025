@@ -9,15 +9,6 @@
 ## Descripción
 Este proyecto consiste en un análisis de datos educativos provenientes de la Open University Learning Analytics Dataset. El objetivo principal es desarrollar un análisis que permita identificar a los estudiantes con mejor y peor desempeño académico.
 
-El conjunto de datos contiene información sobre:
-- Evaluaciones
-- Cursos
-- Evaluación de los estudiantes
-- Información de los estudiantes
-- Ambiente virtual de aprendizaje
-- Registro de los estudiantes
-- Ambiente virtual de aprendizaje de los estudiantes
-
 ## Requisitos
 - Python 3.x
 - Jupyter Notebook/Google Colab
