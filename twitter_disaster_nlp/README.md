@@ -26,6 +26,6 @@
 - Jupyter: Análisis interactivo
 
 ### Autor
-Pamela Benavides Loaiza
-Universidad de Valparaíso - Fundamentos de Ciencia de Datos
+Pamela Benavides Loaiza.
+Universidad de Valparaíso - Fundamentos de Ciencia de Datos.
 28 de Julio 2025
